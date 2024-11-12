@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package Ejercicio6;
 
 public class Contacto {
     private String nombre;

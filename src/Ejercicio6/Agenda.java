@@ -1,3 +1,5 @@
+package Ejercicio6;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,28 +12,28 @@ public class Agenda {
 
     public void agregarContacto(Contacto contacto) {
         contactos.add(contacto);
-        System.out.println("Contacto agregado: " + contacto.getNombre());
+        System.out.println("Ejercicio6.Contacto agregado: " + contacto.getNombre());
     }
 
     public void eliminarContacto(String nombre) {
         for (Contacto contacto : contactos) {
             if (contacto.getNombre().equalsIgnoreCase(nombre)) {
                 contactos.remove(contacto);
-                System.out.println("Contacto eliminado: " + nombre);
+                System.out.println("Ejercicio6.Contacto eliminado: " + nombre);
                 return;
             }
         }
-        System.out.println("Contacto no encontrado: " + nombre);
+        System.out.println("Ejercicio6.Contacto no encontrado: " + nombre);
     }
 
     public void buscarContacto(String nombre) {
         for (Contacto contacto : contactos) {
             if (contacto.getNombre().equalsIgnoreCase(nombre)) {
-                System.out.println("Contacto encontrado: " + contacto);
+                System.out.println("Ejercicio6.Contacto encontrado: " + contacto);
                 return;
             }
         }
-        System.out.println("Contacto no encontrado: " + nombre);
+        System.out.println("Ejercicio6.Contacto no encontrado: " + nombre);
     }
 
     public void mostrarContactos() {
